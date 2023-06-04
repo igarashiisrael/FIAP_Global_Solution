@@ -1,0 +1,79 @@
+/* Estilos personalizados */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.navbar-brand img {
+  margin-right: 5px;
+}
+
+.navbar-brand span {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: green;
+  font-weight: bold;
+  margin-right: 15px;
+  font-size: larger;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Estilos personalizados para o carousel */
+.carousel {
+  width: 100%;
+  /* Defina a largura do carousel como 100% */
+  margin: 0 auto;
+  /* Centralize o carousel horizontalmente */
+}
+
+.carousel-inner {
+  height: 500px;
+  /* Defina a altura desejada para o carousel */
+}
+
+.carousel-item img {
+  object-fit: fill;
+  /* Ajuste o dimensionamento das imagens do carousel para cobrir completamente o contêiner */
+  height: 100%;
+  /* Preencha completamente a altura do contêiner */
+}
+
+body {
+  background-color: rgb(18, 70, 18);
+}
+
+.carousel-caption {
+  position: relative;
+  /* A posição do elemento é herdada do elemento pai */
+
+  /* Posiciona o elemento verticalmente no centro em relação ao elemento pai */
+  left: 50%;
+  /* Posiciona o elemento horizontalmente no centro em relação ao elemento pai */
+  transform: translate(-50%, -50%);
+  /* Move o elemento 50% para a esquerda e 50% para cima em relação à sua posição original */
+  text-align: center;
+  /* Centraliza o texto dentro do elemento */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Define a cor de fundo como preto com 50% de opacidade */
+  /* Fundo translúcido preto */
+  padding-top: 10px;
+  margin-bottom: 5px;
+  /* Adiciona um espaçamento interno de 10 pixels para a legenda */
+  /* Adicione um espaçamento interno para a legenda */
+}
+
+
+.carousel-caption h3 {
+  color: white;
+}
