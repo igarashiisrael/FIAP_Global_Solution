@@ -51,29 +51,65 @@
 
 body {
   background-color: rgb(18, 70, 18);
-}
-
-.carousel-caption {
-  position: relative;
-  /* A posição do elemento é herdada do elemento pai */
-
-  /* Posiciona o elemento verticalmente no centro em relação ao elemento pai */
-  left: 50%;
-  /* Posiciona o elemento horizontalmente no centro em relação ao elemento pai */
-  transform: translate(-50%, -50%);
-  /* Move o elemento 50% para a esquerda e 50% para cima em relação à sua posição original */
-  text-align: center;
-  /* Centraliza o texto dentro do elemento */
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Define a cor de fundo como preto com 50% de opacidade */
-  /* Fundo translúcido preto */
-  padding-top: 10px;
-  margin-bottom: 5px;
-  /* Adiciona um espaçamento interno de 10 pixels para a legenda */
-  /* Adicione um espaçamento interno para a legenda */
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 72px;
 }
 
 
-.carousel-caption h3 {
-  color: gray;
+
+
+
+
+.section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.white-section {
+  background-color: white;
+}
+
+.green-section {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.aste-verde-esquerda {
+  width: 26px;
+  height: 190px;
+  background-color: #80dd16;
+}
+
+.texto-esquerda {
+  color: #ffffff;
+  font-size: 24px;
+  width: 385px;
+  margin-left: 24px;
+}
+
+/*
+  texto direita
+  */
+
+.aste-verde-direita {
+  width: 26px;
+  height: 190px;
+  background-color: #80dd16;
+}
+
+.texto-direita {
+  text-align: right;
+  font-size: 24px;
+  width: 338px;
+  margin-right: 60px;
+}
+
+.estrutura-pagina {
+  display: flex;
 }

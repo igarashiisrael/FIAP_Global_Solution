@@ -5,40 +5,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgroVision - Homepage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/CSS/styles.css">
   <script src="/assets/JS/functions.js"></script>
+  <title>AgroVision - Homepage</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-secondary">
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="/assets/IMG/agro-logo.jpg" alt="Logo" width="45" height="34" class="d-inline-block align-text-top">
         Vision
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+        aria-controls="#nav-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Solução</a>
-          <a class="nav-link" href="#">Dados</a>
-          <a class="nav-link disabled">Agricultura Sustentável</a>
-        </div>
+
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav my-3 ms-3 ms-md-auto d-flex gap-2 gap-md-4">
+          <li class="nav-item">
+            <a class="nav-link active" href="/" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solução</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Agricultura Sustentável</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+
+  <!-- CAROUSEL -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/IMG/2670472_Top Agro Tech Startups Bangladesh.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <h2>Agro é pop, Agro é Tech, Agro é tudo!</h2>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -58,6 +80,128 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <main>
+
+    <!-- GREEN SECTION -->
+    <!-- <div class="container">
+    <div class="row">
+      <div class="section green-section">
+        <img src="assets/IMG/2670472_Top Agro Tech Startups Bangladesh.jpg" alt="">
+        <div class="text">
+          <h1>Texto alinhado à esquerda</h1>
+          <p>Seu conteúdo aqui...</p>
+        </div>
+      </div>
+    </div>
+    <div class="section white-section">
+      <div class="text">
+        <h1>Texto alinhado à esquerda</h1>
+        <p>Seu conteúdo aqui...</p>
+      </div>
+      <img class="image" src="assets/IMG/pexels-tim-mossholder-974314.jpg" alt="Imagem com bordas arredondadas">
+    </div>
+  </div> -->
+    <div id="terceira-parte">
+      <section id="titulo-parte">
+        <h2>Integer varius hendrerit dui. Fusce</h2>
+        <img src="" alt="pequena imagem de uma planta" />
+      </section>
+      <section id="otimizacao-plantio" class="white-section">
+        <h3>Duis suscipit dolor non ex hendrerit fermentum.</h3>
+        <div class="texto-parte">
+          <div class="estrutura-pagina">
+            <div class="aste-verde-esquerda"></div>
+            <p class="texto-esquerda">
+              <strong>Lorem ipsum dolor sit amet</strong><br />
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+              search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+              over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+          </div>
+          <div class="estrutura-pagina">
+            <p class="texto-direita">
+              <strong>Ut tempor quis nibh at aliquam.</strong> <br />
+              Sed tincidunt lacinia nunc sed fringilla. Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Ut rutrum nisl ante, et vestibulum felis tempus id. Cras eleifend
+              interdum ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis
+              placerat lorem eu aliquet efficitur. Nulla tortor nulla, auctor vitae tincidunt a, pulvinar vel risus.
+              Nulla velit neque, rutrum nec leo ac, tristique maximus risus. Mauris vel arcu nec turpis bibendum mollis.
+            </p>
+            <div class="aste-verde-direita"></div>
+          </div>
+        </div>
+      </section>
+      <section id="otimizacao-plantio">
+        <h3>Ut tempor quis nibh at aliquam.</h3>
+        <div class="texto-parte">
+          <div class="estrutura-pagina">
+            <div class="aste-verde-esquerda"></div>
+            <p class="texto-esquerda">
+              <strong>Ut tempor quis nibh at aliquam.</strong><br />
+              Morbi sit amet imperdiet nulla. Sed et rhoncus mi. Vivamus id varius risus, in sollicitudin diam. Integer
+              maximus interdum finibus. Donec vel tempor mauris. Fusce ipsum mi, porta ac tempor vitae, rutrum in
+              libero. Phasellus varius, dolor eget vehicula elementum, elit enim gravida dui, id porttitor nisi ante at
+              nulla. Vivamus vestibulum ante purus, sit amet gravida tortor ultrices eu. Ut condimentum feugiat tempor.
+              Proin at augue in mi tincidunt efficitur vel quis tellus. Sed in ultrices quam, placerat eleifend ipsum.
+              Maecenas ut elit a enim mattis malesuada placerat vitae metus. Donec mauris nunc, gravida eget lorem id,
+              aliquam blandit nunc. Nunc dictum pulvinar dignissim. Donec eu erat at nunc dapibus iaculis sit amet vitae
+              lacus. Mauris fermentum, erat non iaculis fringilla, ante nunc rhoncus tortor, vel ullamcorper mauris
+              turpis a leo.
+            </p>
+          </div>
+          <div class="estrutura-pagina">
+            <p class="texto-direita">
+              <strong>Aenean quis nunc turpis.</strong> <br />
+              Morbi sit amet imperdiet nulla. Sed et rhoncus mi. Vivamus id varius risus, in sollicitudin diam. Integer
+              maximus interdum finibus. Donec vel tempor mauris. Fusce ipsum mi, porta ac tempor vitae, rutrum in
+              libero. Phasellus varius, dolor eget vehicula elementum, elit enim gravida dui, id porttitor nisi ante at
+              nulla. Vivamus vestibulum ante purus, sit amet gravida tortor ultrices eu. Ut condimentum feugiat tempor.
+              Proin at augue in mi tincidunt efficitur vel quis tellus. Sed in ultrices quam, placerat eleifend ipsum.
+              Maecenas ut elit a enim mattis malesuada placerat vitae metus. Donec mauris nunc, gravida eget lorem id,
+              aliquam blandit nunc. Nunc dictum pulvinar dignissim. Donec eu erat at nunc dapibus iaculis sit amet vitae
+              lacus. Mauris fermentum, erat non iaculis fringilla, ante nunc rhoncus tortor, vel ullamcorper mauris
+              turpis a leo.
+            </p>
+            <div class="aste-verde-direita"></div>
+          </div>
+        </div>
+      </section>
+      <section id="otimizacao-plantio" class="white-section">
+        <h3>Mauris fermentum, erat non iaculis fringilla, ante nunc rhoncus tortor, vel ullamcorper mauris
+          turpis a leo.</h3>
+        <div class="texto-parte">
+          <div class="estrutura-pagina">
+            <div class="aste-verde-esquerda"></div>
+            <p class="texto-esquerda">
+              <strong>Mauris fermentum, erat non iaculis fringilla, ante nunc rhoncus tortor, vel ullamcorper mauris
+                turpis a leo.</strong><br />
+              Donec lobortis volutpat libero, vitae malesuada lacus tempus non. Etiam finibus, sem a porta viverra,
+              augue lectus iaculis nunc, eget faucibus eros magna in diam. Vivamus sed porta erat. Mauris sed aliquet
+              sapien. Etiam in urna vitae ipsum laoreet consequat et nec erat. Proin quis auctor massa, at tincidunt
+              metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ac
+              diam sit amet nulla imperdiet elementum quis ac purus. Ut leo neque, pellentesque non elit nec, accumsan
+              finibus sapien.
+            </p>
+          </div>
+          <div class="estrutura-pagina">
+            <p class="texto-direita">
+              <strong>Etiam tellus libero, dapibus vehicula ex non, vulputate facilisis erat.</strong> <br />
+              Suspendisse dapibus vitae mauris at placerat. Suspendisse tristique elit a eros pulvinar, ac lacinia ante
+              accumsan. Curabitur accumsan accumsan placerat. Morbi ac magna a nulla egestas viverra vitae eget nisi.
+              Aliquam cursus lacinia odio, ut eleifend lorem egestas quis. Nunc sed lacinia odio. Donec dapibus felis
+              commodo justo pharetra vestibulum. Vivamus viverra magna justo. Nulla hendrerit euismod ex, eget luctus
+              quam interdum eget. Praesent vel aliquam lorem. Proin ut mauris congue ante ultrices efficitur.
+            </p>
+            <div class="aste-verde-direita"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 
 
