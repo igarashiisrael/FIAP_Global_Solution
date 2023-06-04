@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.container-lg {
+  padding: 0;
+}
+
 /* Estilos personalizados */
 .navbar-brand {
   display: flex;
@@ -43,10 +54,18 @@
 }
 
 .carousel-item img {
-  object-fit: fill;
-  /* Ajuste o dimensionamento das imagens do carousel para cobrir completamente o contêiner */
-  height: 100%;
-  /* Preencha completamente a altura do contêiner */
+  object-fit: cover;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: white;
+  width: 70%;
 }
 
 body {
