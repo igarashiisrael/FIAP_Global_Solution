@@ -1,15 +1,24 @@
 :root {
     --fonte-principal: 'Poppins', sans-serif;
-    --verde-fundo: #4D995E;
+    --verde-fundo: #778c43;
     --cor-fundo: #EBECEE;
     --preto: #000000;
     --branco: #FFFFFF;
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--branco);
     font-family: var(--fonte-principal);
     text-align: justify;
+}
+
+.botoes {
+    padding: 2em;
+}
+
+.botao {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
 }
 
 .introducao {
@@ -33,7 +42,7 @@ body {
 
 .content__titulo {
     font-size: 32px;
-    margin: 2em 0 0 4em;
+    margin: 2em 0 0 9em;
 }
 
 .content__info {
@@ -66,7 +75,7 @@ body {
 
 .content__titulo2 {
     font-size: 32px;
-    margin: 2em 0 0 4em;
+    margin: 1em 0;
 }
 
 .content__info2 {
@@ -78,4 +87,12 @@ body {
 .content__info__img2 {
     margin: 1em 2em;
 
+}
+
+.dados {
+    color: var(--preto);
+}
+
+.dados2 {
+    color: var(--verde-fundo);
 }
