@@ -4,6 +4,7 @@
   --cor-fundo: #EBECEE;
   --preto: #000000;
   --branco: #FFFFFF;
+  --cor-lilas: #4D225E
 }
 
 * {
@@ -11,6 +12,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto';
+}
+
+p {
+  color: var(--cor-lilas);
+}
+
+h2 {
+  color: var(--cor-lilas);
+}
+
+.carousel-caption p {
+  color: var(--branco);
 }
 
 
@@ -145,4 +158,18 @@ body {
 
 .fundo-verde {
   background-color: var(--verde-fundo);
+}
+
+.fundo-lilas {
+  background-color: var(--cor-lilas);
+}
+
+.fundo-lilas p {
+  color: var(--verde-fundo);
+  font-weight: bold;
+}
+
+.image-corpo {
+  width: 1080px;
+  height: 768px;
 }
