@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
 :root {
   --fonte-principal: 'Poppins', sans-serif;
   --verde-fundo: #778c43;
@@ -20,6 +22,10 @@ p {
 
 h2 {
   color: var(--cor-lilas);
+}
+
+.logo-name {
+  font-family: 'Cherry Bomb One', cursive;
 }
 
 .carousel-caption p {
