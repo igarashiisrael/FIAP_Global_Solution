@@ -1,0 +1,138 @@
+:root {
+    --fonte-principal: 'Poppins', sans-serif;
+    --verde-fundo: #778c43;
+    --cor-fundo: #EBECEE;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    text-align: justify;
+}
+
+.botoes {
+    padding: 2em;
+}
+
+.botao {
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+}
+
+.introducao {
+    width: 50%;
+    font-size: 24px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.content {
+    background-color: var(--verde-fundo);
+    color: var(--branco);
+    padding:  2em 0 4em 0 ;
+    margin-top: 50px;
+}
+
+
+.content__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__titulo {
+    font-size: 32px;
+    margin: 2em 0 0 9em;
+}
+
+.content__info {
+    width: 45%;
+    margin: 0 5em 0 0;
+    font-size: 24px;
+}
+
+.content__info__text {
+    padding: 0.5em 0 0;
+}
+
+.content__info__img {
+    width: 25%;
+    height: 25%;
+}
+
+.content2 {
+    background-color: var(--branco);
+    color: var(--preto);
+    margin: auto;
+    padding: 2em 0;
+}
+
+
+.content__box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__titulo2 {
+    color: var(--verde-fundo);
+    font-size: 32px;
+    margin: 1em 0;
+}
+
+.content__info2 {
+    width: 50%;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.content__info__img2 {
+    margin: 1em 2em;
+
+}
+
+.content3 {
+    background-color: var(--branco);
+    color: var(--preto);
+    margin: auto;
+    padding: 2em 0;
+    margin-top: 50px;
+}
+
+
+.content__box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__titulo3 {
+    color: var(--verde-fundo);
+    font-size: 32px;
+    margin: 1em 0;
+}
+
+.content__info3 {
+    width: 50%;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.content__info__img3 {
+    margin: 1em 2em;
+
+}
+
+footer{
+    height: 100px;
+}
+
+.dados {
+    color: var(--preto);
+}
+
+.dados2 {
+    color: var(--verde-fundo);
+}
