@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: justify;
+}
+
+:root {
+    --fonte-principal: 'Poppins', sans-serif;
+    --verde-fundo: #778c43;
+    --cor-fundo: #EBECEE;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --roxo: #4D225E;
+
+}
+
+.container-titulo{
+    background-color: var(--verde-fundo);
+    height: 100px;
+    width: 600px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: -10px 10px 5px 0px #494949; */
+    border-radius: 50px;
+    
+}
+#Título{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--branco);
+
+}
+
+#Agricultura1{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width: 50%;
+    
+    
+}
+
+#Agricultura2{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    /* width: 50%; */
+    display: flex;
+    
+    
+}
+
+#Agricultura3{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width: 50%;
+    
+}
+
+#Agricultura4{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width: 50%;
+    
+}
+
+.container-carrossel{
+    margin-top: 50px;
+    background-color: var(--verde-fundo);
+    color: var(--branco);
+    display: block;
+    padding-bottom: 199px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#container0{
+    margin-top: 50px;
+    overflow: hidden;
+    height: 350px;
+    width: 900px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
+}
+
+#container1{
+    margin-top: 50px;
+    overflow: hidden;
+    height: 350px;
+    width: 900px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#container2{
+
+    margin-top: 50px;
+    overflow: hidden;
+    height: 350px;
+    width: 900px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
+}
+
+#container3{
+
+    margin-top: 50px;
+    overflow: hidden;
+    height: 350px;
+    width: 900px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
+
+}
+
+#imgfundo1{
+    background-image: url(../IMG/Máquina\ a\ vapor\ na\ agricultura.webp);
+    overflow: hidden;
+    height: 700px;
+    width: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 400px;
+}
+
+#imgfundo2{
+    background-image: url(../IMG/processos-erosao-solo-artigos-cursos-cpt.jpg);
+    overflow: hidden;
+    height: 700px;
+    width: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 400px;
+}
+
+#imgfundo3{
+    background-image: url(../IMG/a8e299231dfa87454e99e1a340d8def697df8919.jpg);
+    overflow: hidden;
+    height: 500px;
+    width: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 200px;
+}
+
+#imgfundo4{
+    background-image: url(../IMG/Agricultura-sustentavel.jpg);
+    overflow: hidden;
+    height: 700px;
+    width: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 485px;
+}
+
+#Título2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 15px;
+    color: var(--branco);
+}
+
+#container-titulo2{
+    background-color: var(--verde-fundo);
+    height: 75px;
+    width: 250px;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 0px 0px 5px 5px #494949; */
+    border-radius: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.paragraphODS{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--branco);
+    text-align: center;
+    padding-top: 15px;
+}
+
+#container_ODS1{
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 150px;
+    height: 145px;
+    width: 500px;
+    background-color: var(--verde-fundo);
+    margin-bottom: 50px;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 5px 5px #494949; */
+}
+
+#container_ODS2{
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 800px;
+    height: 180px;
+    width: 550px;
+    background-color: var(--verde-fundo);
+    margin-bottom: 50px;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 5px 5px #494949; */
+}
+
+#container_ODS3{
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 150px;
+    height: 210px;
+    width: 550px;
+    background-color: var(--verde-fundo);
+    margin-bottom: 50px;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 5px 5px #494949; */
+}
+
+#container_ODS4{
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 800px;
+    height: 220px;
+    width: 560px;
+    background-color: var(--verde-fundo);
+    margin-bottom: 50px;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 5px 5px #494949; */
+}
+
+#container_ODS1, #container_ODS2, #container_ODS3, #container_ODS4{
+    visibility: hidden;
+}
+
