@@ -179,3 +179,17 @@ body {
   width: 1080px;
   height: 768px;
 }
+
+.text-reset {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: var(--verde-fundo);
+  color: var(--branco);
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 10px var(--verde-fundo);
+  /* Altere "red" para a cor desejada */
+}
