@@ -174,7 +174,7 @@ input[type=text]:focus {
 }
 
 input.input-email:focus {
-  box-shadow: 0 0 10px var(--branco);
+  box-shadow: 0 0 10px var(--cor-fundo);
 }
 
 input.input-email-index:focus {
