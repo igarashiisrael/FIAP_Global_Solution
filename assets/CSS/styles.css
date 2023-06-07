@@ -24,14 +24,14 @@ h2 {
   color: var(--cor-lilas);
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 72px;
+}
+
 .logo-name {
   font-family: 'Cherry Bomb One', cursive;
 }
-
-.carousel-caption p {
-  color: var(--branco);
-}
-
 
 .container-fluid {
   padding: 0;
@@ -41,7 +41,7 @@ h2 {
   padding: 0;
 }
 
-/* Estilos personalizados */
+/* Navbar */
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -72,22 +72,23 @@ h2 {
   flex-grow: 1;
 }
 
-/* Estilos personalizados para o carousel */
+/* Carousel */
 .carousel {
   width: 100%;
-  /* Defina a largura do carousel como 100% */
   margin: 0 auto;
-  /* Centralize o carousel horizontalmente */
 }
 
 .carousel-inner {
   height: 500px;
-  /* Defina a altura desejada para o carousel */
 }
 
 .carousel-item img {
   object-fit: cover;
   height: 100vh;
+}
+
+.carousel-caption p {
+  color: var(--branco);
 }
 
 .carousel-caption {
@@ -96,16 +97,9 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  color: white;
+  color: var(--branco);
   width: 70%;
 }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 72px;
-}
-
-
 
 .section {
   display: flex;
@@ -114,44 +108,11 @@ body {
 }
 
 .white-section {
-  background-color: white;
+  background-color: var(--cor-fundo);
 }
 
 .green-section {
   color: white;
-}
-
-
-
-
-.aste-verde-esquerda {
-  width: 26px;
-  height: 190px;
-  background-color: #80dd16;
-}
-
-.texto-esquerda {
-  color: #ffffff;
-  font-size: 24px;
-  width: 385px;
-  margin-left: 24px;
-}
-
-/*
-  texto direita
-  */
-
-.aste-verde-direita {
-  width: 26px;
-  height: 190px;
-  background-color: #80dd16;
-}
-
-.texto-direita {
-  text-align: right;
-  font-size: 24px;
-  width: 338px;
-  margin-right: 60px;
 }
 
 .corpo-da-pagina {
@@ -159,7 +120,7 @@ body {
 }
 
 .fundo-branco {
-  background-color: #FFFFFF;
+  background-color: var(--cor-fundo);
 }
 
 .fundo-verde {
@@ -180,16 +141,50 @@ body {
   height: 768px;
 }
 
+/* Footer */
+
 .text-reset {
   text-decoration: none;
 }
 
-.btn {
+.btn-index {
   background-color: var(--verde-fundo);
   color: var(--branco);
 }
 
+.btn {
+  border-color: var(--branco);
+  color: var(--branco);
+}
+
+.btn:hover {
+  border-color: var(--branco);
+  color: var(--verde-fundo);
+  background-color: var(--branco);
+}
+
+.btn-index:hover {
+  border-color: var(--verde-fundo);
+  color: var(--verde-fundo);
+  box-shadow: 0 0 10px var(--verde-fundo);
+}
+
 input[type=text]:focus {
   box-shadow: 0 0 10px var(--verde-fundo);
-  /* Altere "red" para a cor desejada */
+}
+
+input.input-email:focus {
+  box-shadow: 0 0 10px var(--branco);
+}
+
+input.input-email-index:focus {
+  box-shadow: 0 0 10px var(--verde-fundo);
+}
+
+input.input-email-index {
+  background-color: #EBECEE;
+}
+
+input.input-email {
+  background-color: #EBECEE;
 }
