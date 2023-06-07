@@ -20,4 +20,21 @@ function validarEmailIndex() {
   } else {
     alert("Por favor, insira um e-mail válido.");
   }
+
+}
+
+var botao = document.getElementById('btn-invest');
+var totalinvest = document.getElementById('num-invest');
+var cont = 0;
+    
+botao.addEventListener('click', clicou);
+
+function clicou(){
+  if (cont!=0) {
+    botao.innerHTML = `Você já investitiu`;
+  }
+  else {
+    totalinvest.innerHTML = `5000`;
+    cont ++;
+  }
 }
