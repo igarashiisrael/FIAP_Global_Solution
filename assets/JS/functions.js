@@ -40,33 +40,41 @@ function clicou() {
   }
 }
 
-/* function autoCarousel() {
-  // Obtém a referência para o carrossel
-  const carousel = document.querySelector('#carouselExampleFade');
+function validarEmail() {
+  const telefoneInput = document.querySelector('.input-telefone');
+  const telefone = telefoneInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+  const ddd = telefone.slice(0, 2);
+  const numero = telefone.slice(2);
 
-  // Verifica se o carrossel existe
-  if (carousel) {
-    // Define o intervalo de tempo em milissegundos (por exemplo, 3 segundos)
-    const interval = 3000;
+  const telefoneFormatado = `(${ddd}) ${numero}`;
 
-    // Função para avançar para o próximo slide
-    const nextSlide = () => {
-      const activeSlide = carousel.querySelector('.carousel-item.active');
-      const next = activeSlide.nextElementSibling || carousel.firstElementChild;
-      activeSlide.classList.remove('active');
-      next.classList.add('active');
-    };
-
-    // Chama a função nextSlide a cada intervalo de tempo
-    setInterval(nextSlide, interval);
+  if (!telefone) {
+    return; // Retorna sem exibir o alerta
   }
+  // Validação do telefone
+  if (telefone.length !== 11 || isNaN(telefone)) {
+    alert('Digite um número de telefone válido!');
+    return;
+  } else { alert('Telefone cadastrado com sucesso!') }
+
+  // Exibe o telefone formatado no console (pode ser alterado para exibir em outro lugar, como em um elemento HTML)
+  console.log(telefoneFormatado);
 }
 
-// Chama a função para iniciar o carrossel automático
-autoCarousel(); */
+const telefoneInput = document.querySelector('.input-telefone');
+telefoneInput.addEventListener('input', formatarTelefone);
 
+function formatarTelefone() {
+  const telefone = telefoneInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+  const ddd = telefone.slice(0, 2);
+  const primeiraParte = telefone.slice(2, 7);
+  const segundaParte = telefone.slice(7);
 
+  let telefoneFormatado = `(${ddd}) ${primeiraParte}`;
 
+  if (segundaParte) {
+    telefoneFormatado += `-${segundaParte}`;
+  }
 
-
-
+  telefoneInput.value = telefoneFormatado;
+}

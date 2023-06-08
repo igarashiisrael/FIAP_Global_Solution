@@ -150,7 +150,28 @@ body {
   height: 768px;
 }
 
-/* Footer */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px;
+}
+
+.logo-name-titulo{
+  font-family: 'Cherry Bomb One', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  margin-top: 15px;
+}
+
+.global-solution{
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
 
 .text-reset {
   text-decoration: none;
@@ -198,26 +219,18 @@ input.input-email {
   background-color: #EBECEE;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 45px;
+input.input-telefone-index:focus {
+  box-shadow: 0 0 10px var(--verde-fundo);
 }
 
-.logo-name-titulo{
-  font-family: 'Cherry Bomb One', cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  margin-top: 15px;
+input.input-telefone-index {
+  background-color: #EBECEE;
 }
 
-.global-solution{
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
-  margin-top: 40px;
-  margin-left: 40px;
+input.input-telefone {
+  background-color: #EBECEE;
+}
 
+input.input-telefone:focus {
+  box-shadow: 0 0 10px var(--cor-fundo);
 }
